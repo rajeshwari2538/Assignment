@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Example</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet"> <!-- Bootstrap Icons -->
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+<nav class="navbar shadow py-2 px-5 position-fixed navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand me-auto" href="#">Logo</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link py-2 px-3" href="#"><i class="bi bi-globe"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-3" href="#"><i class="bi bi-bell"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-2 px-3" href="#">CL</a>
+          </li>
+          <li class="nav-item dropdown user-dropdown">
+            <a class="nav-link py-2 px-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              User
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Sidebar Left -->
+  <div class="sidebar-left position-fixed top-0 start-0 bg-light">
+    <ul class="nav flex-column py-5 px-2">
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="bi bi-house-door"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="bi bi-search"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="bi bi-bell"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="bi bi-envelope"></i></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-dark" href="#"><i class="bi bi-person"></i></a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Section -->
+  <section class="section-container">
+    <div class="section p-2 mb-1">
+      <div class="section-content mb-1">
+        <div class="section-title fs-2 mb-0">Good Afternoon, User</div>
+        <p class="text-secondary mb-0">Every step counts, Keep up the journey!</p>
+      </div>
+      <div class="arrow-icons text-end fs-4">
+        <i class="bi bi-chevron-left bg-light rounded-circle"></i>
+        <i class="bi bi-chevron-right bg-light rounded-circle"></i>
+      </div>
+    </div>
+  
+    <!-- Card Container -->
+    <div class="card-container">
+      <!-- Cards -->
+      <div class="card card-bg1 rounded shadow ">
+        <div class="card-body p-4">
+          <div class="card-title fs-6 mb-0 fw-bold">Workwise.AI Unleashed</div>
+          <p>Your intelligent ally for everything, from career leaps to personal well-being!</p>
+          <a href="#" class="btn btn-light text-dark">Explore Now</a>
+        </div>
+      </div>
+  
+      <div class="card card-bg2 rounded shadow ">
+        <div class="card-body p-4">
+          <div class="card-title fs-6 mb-0 fw-bold">Role Health</div>
+          <p class="mb-0">b2C product owner</p>
+          <h3>50%</h3>
+          <a href="#" class="btn text-primary">Self assess <i class="bi bi-pen"></i></a>
+        </div>
+      </div>
+  
+      <div class="card card-bg3 rounded shadow">
+        <div class="card-body p-4">
+          <div class="card-title fs-6 mb-0 fw-bold">Personal Health</div>
+          <p>How are you feeling today?</p>
+          <a href="#" class="btn text-primary ">Take a 2 min joy test <i class="bi bi-stopwatch"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section2 p-1 position-absolute top-20">
+    <div class="section-header d-flex justify-content-start align-items-center">
+      <h2 class="section2-title text-secondary fs-5 me-4">Focused</h2>
+      <div class="dropdown2">
+        <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          Feeds
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="section2-content">
+      <div class="card bg-light p-4 rounded mt-3">
+        <div class="card-body">
+          <div class="pinned-icon fw-bold text-dark d-inline-block py-1 px-4 rounded-pill">
+            <i class="bi bi-pin"></i> Pinned
+          </div>
+          <div class="announcement">
+            <h3 class="announcement-title fs-5 mt-2 mb-1">Announcement by ct_role_skill_based_it_ntuc</h3>
+            <p class="announcement-date text-secondary mb-4">15 Feb 2024, 3:56 PM</p>
+            <h5 class="mb-0">
+              AAAAAYY
+            </h5>
+            <p> GHJ</p>
+            <div class="interactions d-flex">
+              <span class="like-icon me-3"><i class="bi bi-hand-thumbs-up"></i> Likes</span>
+              <span class="comment-icon me-3"><i class="bi bi-chat-left"></i> Comments</span>
+              <span class="share-icon"><i class="bi bi-share"></i> Share</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Sidebar Right -->
+  <div class="sidebar-right bg-light float-end pt-4 me-2">
+    <div class="sidebar-right-container d-flex justify-content-between mb-0">
+        <div class="sidebar-title fs-5 fw-bold mx-4 mb-1">Things to do</div>
+        <a class="filter-icon fs-4 text-dark me-3" href="#"><i class="bi bi-funnel"></i></a>
+    </div>
+    <div class="card-right mb-0 p-3">
+      <div class="card-body">
+        <div class="card-title text-secondary fs-6 mb-0">15 Feb 2024, 4:31 PM</div>
+        <p>ct_role_skill_based_it_ntuc update your check-in for the kr1 key result for the period 202401-01 to 2024-12-31</p>
+        <a href="#" class="btn btn-outline-primary ms-4">Check-in key result progress</a>
+      </div>
+    </div>
+  
+    <div class="card-right mb-0 p-3">
+      <div class="card-body">
+        <div class="card-title text-secondary fs-6 mb-0">14 Feb 2024, 10:43 AM</div>
+        <p>09Aug has created the performance program hi22 for the period 2019-02-01 to 2024-02-29. Start creating your Goals!</p>
+        <a href="#" class="btn btn-outline-primary ms-4">Create Goal Sheet</a>
+      </div>
+    </div>
+  
+    <div class="card-right mb-0 p-3">
+      <div class="card-body">
+        <div class="card-title text-secondary fs-6 mb-0">12 Feb 2024, 6:08 PM</div>
+        <p>Your Goal Sheet published for the program P TEST1 for the period 2023-01-01 to 2023-12-31</p>
+        <a href="#" class="btn btn-outline-primary ms-4">Push, Goal</a>
+      </div>
+    </div>
+  
+    <div class="card-right p-3">
+      <div class="card-body">
+        <p>Update Your Performance for P TEST1 for December</p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  </body>
+  </html>
